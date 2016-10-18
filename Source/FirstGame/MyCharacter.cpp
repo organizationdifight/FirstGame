@@ -12,6 +12,10 @@ AMyCharacter::AMyCharacter()
 
 	CameraBoomComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoomComp->TargetArmLength = 300.f;
+	CameraBoomComp->AttachTo(RootComponent);
+
+	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));
+	CameraComp->AttachTo(CameraBoomComp);
 
 }
 
