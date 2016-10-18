@@ -32,7 +32,7 @@ public:
 public:
 
 	UPROPERTY(VisibleAnywhere, Category = "Camera")
-		USpringArmComponent* CameraBootComp;
+		USpringArmComponent* CameraBoomComp;
 
 	UPROPERTY(VisibleAnywhere, Category = "Camera")
 		UCameraComponent* CameraComp;
