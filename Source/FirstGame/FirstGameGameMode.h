@@ -13,4 +13,7 @@ class FIRSTGAME_API AFirstGameGameMode : public AGameMode
 {
 	GENERATED_BODY()
 	
+	
+	
+	
 };

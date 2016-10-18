@@ -7,10 +7,7 @@
 		{
 			"Name": "FirstGame",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
+			"LoadingPhase": "Default"
 		}
 	]
 }
