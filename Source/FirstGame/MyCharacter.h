@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Character.h"
+#include "FBox.h"
 #include "MyCharacter.generated.h"
 
 UCLASS()
@@ -14,8 +15,11 @@ public:
 	// Sets default values for this character's properties
 	AMyCharacter();
 
+	//AMyCharacter(const FObjectInitializer& ObjectInitializer);
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
 	
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
@@ -46,8 +50,18 @@ public:
 	UPROPERTY(VisibleAnyWhere, Category = "Camera")
 		UCameraComponent* CameraBoomComp;
 
-	UPROPERTY(VisibleAnywhere, Category = "Switch Components")
-		class UPointLightComponent* PointLight1;
+	
+public:
+	void useObject();
+
+private:
+	bool isBox(class AFbox* Other);
+	bool isLightSwitch(class ALightSwitch_Parent* Other);
+
+private:
+	ALightSwitch_Parent* currentSwitch;
+	AFbox* currentBox;
+
 	
 	
 };

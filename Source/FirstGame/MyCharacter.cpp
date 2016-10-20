@@ -63,12 +63,12 @@ void AMyCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompone
 }
 
 void AMyCharacter::OffLight() {
-	PointLight1 = CreateDefaultSubobject<UPointLightComponent>(TEXT("PointLight3"));
-	PointLight1->bVisible = false;
+	/*PointLight1 = CreateDefaultSubobject<UPointLightComponent>(TEXT("PointLight3"));
+	PointLight1->bVisible = false;*/
 }
 void AMyCharacter::OnLight() {
-	PointLight1 = CreateDefaultSubobject<UPointLightComponent>(TEXT("PointLight3"));
-	PointLight1->bVisible = true;
+	/*PointLight1 = CreateDefaultSubobject<UPointLightComponent>(TEXT("PointLight3"));
+	PointLight1->bVisible = true;*/
 }
 
 void AMyCharacter::Forward(float val) {
